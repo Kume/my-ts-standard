@@ -1,0 +1,15 @@
+{
+  "name": "@my-ts-standard/my-ts-cli",
+  "author": "makoto.kume",
+  "version": "0.1.0",
+  "description": "cli package sample",
+  "scripts": {
+    "test": "jest",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint --ext .jsx,.js,.tsx,.ts ./src"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "@my-ts-standard/my-ts-core": "^0.1.0"
+  }
+}
