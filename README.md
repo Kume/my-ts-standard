@@ -27,3 +27,11 @@ yarn add {package-name}
 ```sh
 monorepo内の
 ```
+
+# 開発
+
+## 開発モードで立ち上げ
+
+```
+lerna run dev --parallel
+```
