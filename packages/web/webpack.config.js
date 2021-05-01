@@ -1,15 +1,15 @@
 const path = require('path');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
-const appDirectory = path.resolve(__dirname, '../');
 
 module.exports = {
   entry: './src/index.tsx',
 
   output: {
     filename: 'index.js',
-    path: path.resolve(appDirectory, 'public'),
+    path: path.resolve(__dirname, 'dest'),
   },
 
   module: {
@@ -42,5 +42,10 @@ module.exports = {
     contentBase: path.resolve(__dirname, 'public'),
   },
 
-  plugins: [isDevelopment && new ReactRefreshWebpackPlugin()].filter(Boolean),
+  plugins: [
+    isDevelopment && new ReactRefreshWebpackPlugin(),
+    new CopyPlugin({
+      patterns: [{from: 'public', to: ''}],
+    }),
+  ].filter(Boolean),
 };

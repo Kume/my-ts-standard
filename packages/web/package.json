@@ -5,7 +5,8 @@
   "description": "core library package sample",
   "scripts": {
     "test": "jest",
-    "dev": "webpack serve --hot --config webpack.config.js --mode development",
+    "build": "webpack --mode production",
+    "dev": "webpack serve --hot --mode development --content-base public",
     "lint": "eslint --ext .jsx,.js,.tsx,.ts ./src",
     "typecheck": "tsc"
   },
@@ -27,6 +28,7 @@
     "@types/react-dom": "^17.0.0",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^8.1.1",
     "css-loader": "^5.0.1",
     "react": "^17.0.1",
     "react-refresh": "^0.10.0",
