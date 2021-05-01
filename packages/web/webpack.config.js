@@ -1,5 +1,7 @@
 const path = require('path');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
+const isDevelopment = process.env.NODE_ENV !== 'production';
 const appDirectory = path.resolve(__dirname, '../');
 
 module.exports = {
@@ -39,4 +41,6 @@ module.exports = {
     port: 8081,
     contentBase: path.resolve(__dirname, 'public'),
   },
+
+  plugins: [isDevelopment && new ReactRefreshWebpackPlugin()].filter(Boolean),
 };
