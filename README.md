@@ -24,9 +24,8 @@ cd packages/{local-package-name}
 yarn add {package-name}
 ```
 
-```sh
-monorepo内の
-```
+monorepo 内のパッケージを追加する場合は上記コマンドではうまく行かない。
+package.json に直接書き加えた後に yarn すると内部でリンクしてくれるが、このやり方が正しいかは不明。
 
 # 開発
 
