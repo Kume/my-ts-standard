@@ -9,7 +9,7 @@
     "lint": "eslint --ext .jsx,.js,.tsx,.ts ./src"
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "@my-ts-standard/my-ts-core": "^0.1.0"
+    "@my-ts-standard/my-ts-core": "^0.1.0",
+    "dotenv": "^8.2.0"
   }
 }

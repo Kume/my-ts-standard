@@ -10,6 +10,5 @@
     "build": "tsc",
     "dev": "tsc -w",
     "lint": "eslint --ext .jsx,.js,.tsx,.ts ./src"
-  },
-  "dependencies": {}
+  }
 }
