@@ -1,5 +1,5 @@
 {
-  "name": "@my-ts-standard/my-ts-web",
+  "name": "@my-ts-standard/my-ts-web-webpack",
   "author": "makoto.kume",
   "version": "0.1.0",
   "description": "core library package sample",

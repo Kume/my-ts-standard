@@ -2502,9 +2502,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@my-ts-standard/my-ts-web@workspace:packages/web":
+"@my-ts-standard/my-ts-web-webpack@workspace:packages/web-webpack":
   version: 0.0.0-use.local
-  resolution: "@my-ts-standard/my-ts-web@workspace:packages/web"
+  resolution: "@my-ts-standard/my-ts-web-webpack@workspace:packages/web-webpack"
   dependencies:
     "@babel/core": ^7.12.10
     "@babel/plugin-proposal-class-properties": ^7.12.1

@@ -15,9 +15,9 @@ jobs:
         working-directory: ./packages/core
       - name: Build web
         run: yarn build
-        working-directory: ./packages/web
+        working-directory: ./packages/web-webpack
       - name: Archive web
         uses: actions/upload-artifact@v2
         with:
           name: web-output
-          path: packages/web/out
+          path: packages/web-webpack/out
