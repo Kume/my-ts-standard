@@ -3,12 +3,13 @@
   "author": "makoto.kume",
   "version": "0.1.0",
   "description": "core library package sample",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./lib/index.js",
+  "module": "./esm/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "tsc",
-    "dev": "tsc -w",
+    "build": "tsc && tsc -p tsconfig.esm.json",
+    "dev": "tsc -p tsconfig.esm.json -w",
     "lint": "eslint --ext .jsx,.js,.tsx,.ts ./src"
   }
 }
